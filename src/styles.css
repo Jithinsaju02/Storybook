@@ -1,0 +1,251 @@
+body {
+    font-family: "Cormorant Garamond", serif;
+    background-color: #f8f1e7;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #3e2723;
+  }
+  
+  .container {
+    width: 600px;
+    height: 450px;
+    margin: 50px auto;
+    background: #fff8e1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    border: 2px solid #d4a373;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+  .title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: "Playfair Display", serif;
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .tab {
+    background: #b5838d;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background 0.3s;
+    font-family: "Playfair Display", serif;
+  }
+  
+  .tab:hover {
+    background: #6d6875;
+  }
+  
+  .story-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    min-height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #d4a373;
+  }
+  
+  .story-content {
+    font-size: 20px;
+    font-style: italic;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.btn {
+    padding: 8px 16px;
+    background-color: #d4a373;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+  
+  .btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .btn:hover:not(:disabled) {
+    background: #b5838d;
+  }
+
+  .story-container {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+  
+.story-image {
+    width: 40%;
+    height: 80%;
+    object-fit: cover; /* Ensures the image scales within its area */
+    border-radius: 10px;
+}
+  
+.story-content {
+    width: 55%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    font-size: 17px;
+    line-height: 1.3;
+    overflow: hidden; /* Ensures no scrolling */
+}
+
+
+.home-button {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+  .home-button .btn {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    display: inline-block;
+    transition: background 0.3s;
+  }
+  
+  .home-button .btn:hover {
+    background-color: #003f7f;
+  }
+  
+
+  /* Hero Section */
+.hero {
+    height: 100vh;
+    /* background-image: url('images/jithin_pg1.png'); Add an actual image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.hero-content {
+    max-width: 800px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Story Tiles */
+.story-tiles {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.story-tile {
+    background: #fff;
+    color: #333;
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.story-tile:hover {
+    transform: scale(1.05);
+}
+
+/* Button */
+.btn {
+    background: #d4a373;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background: #b5838d;
+}
+
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden; /* Completely remove scrolling */
+}

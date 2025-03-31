@@ -1,0 +1,114 @@
+/* Ensure the container takes full space */
+.noureen-story-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background: url("../assets/images/background.png") no-repeat center center/cover;
+    text-align: center;
+}
+
+/* Home Button */
+.noureen-home-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.noureen-home-btn:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+/* Story Tile - Fixed Size */
+.noureen-story-tile {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    width: 500px;
+    height: 500px;  /* FIXED HEIGHT */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative; /* Needed for page number positioning */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures consistent spacing */
+}
+
+/* Story Image */
+.noureen-story-image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.noureen-story-image {
+    max-width: 100%;  /* Ensures the image doesn’t overflow */
+    max-height: 250px; /* Adjust based on your design */
+    height: auto; /* Maintains aspect ratio */
+    object-fit: contain; /* Prevents cropping or stretching */
+    border-radius: 10px; /* Optional rounded corners */
+}
+
+
+
+/* Story Text */
+.noureen-story-text {
+    font-size: .99rem;
+    color: white;
+    line-height: 1.5;
+    overflow: hidden; /* Prevents text overflow */
+    text-overflow: ellipsis;
+    flex-grow: 1; /* Ensures it takes available space */
+}
+
+/* Page Number - Centered at Bottom */
+.noureen-page-number {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: white;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+/* Navigation Buttons */
+.noureen-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.noureen-btn {
+    padding: 8px 15px;
+    background: #ffcc00;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.noureen-btn:disabled {
+    background: gray;
+    cursor: not-allowed;
+}
+
+.noureen-btn:hover:not(:disabled) {
+    background: #ff9900;
+}
