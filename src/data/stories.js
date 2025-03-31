@@ -23,8 +23,8 @@ const stories = [
     { 
         id: "4", 
         title: "Le Roman du renard (The Tale of the Fox)", 
-        member: { name: "Ann Maria Thankachan", id: "(RA2411009010070)" }, 
-        image: require("../assets/images/ann4.jpeg.jpg") 
+        member: { name: "Omkar Sharma", id: "(RA2411009010061)" }, 
+        image: require("../assets/images/o1.jpg") 
       },
     { 
         id: "5", 
