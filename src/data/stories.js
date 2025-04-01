@@ -22,7 +22,7 @@ const stories = [
       },
     { 
         id: "4", 
-        title: "Le Roman du renard (The Tale of the Fox)", 
+        title: "Les quatre fils aymon(the four sons of aymon)", 
         member: { name: "Omkar Sharma", id: "(RA2411009010061)" }, 
         image: require("../assets/images/o1.jpg") 
       },
